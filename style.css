@@ -70,6 +70,12 @@ body {
     text-decoration: underline;
 }
 
+.mail {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
 @media (max-width: 480px) {
     .photo {
         width: 150px;
