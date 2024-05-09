@@ -77,4 +77,8 @@ body {
         background-position-y: -35px;
         background-size: cover;
     }
+
+    .about-text br {
+        display: none;
+    }
 }
