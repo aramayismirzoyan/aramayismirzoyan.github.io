@@ -16,8 +16,17 @@ body {
     margin-bottom: 80px;
 }
 
+.photo {
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: url("img/photo.jpg");
+    background-position-y: -53px;
+}
+
 .title {
-    margin-top: 80px;
     color: #2e2c2c;
 }
 
@@ -59,4 +68,13 @@ body {
 
 .links ul li a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .photo {
+        width: 150px;
+        height: 150px;
+        background-position-y: -35px;
+        background-size: cover;
+    }
 }
