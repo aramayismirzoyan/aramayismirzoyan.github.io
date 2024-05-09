@@ -13,17 +13,18 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .photo {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 45px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: url("https://raw.githubusercontent.com/aramayismirzoyan/aramayismirzoyan.github.io/main/img/photo.jpg");
-    background-position-y: -53px;
+    background-position-y: -34px;
+    background-size: cover;
 }
 
 .title {
