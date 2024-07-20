@@ -80,7 +80,6 @@ body {
     .photo {
         width: 150px;
         height: 150px;
-        background-position-y: -35px;
         background-size: cover;
     }
 
