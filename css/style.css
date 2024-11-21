@@ -8,6 +8,14 @@ body {
             "wdth" 100;
 }
 
+a {
+    color: #6e6666;
+}
+
+a:hover {
+    opacity: .8;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -74,6 +82,50 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-top: 25px;
+}
+
+.portfolio {
+    margin-top: 30px;
+}
+
+.portfolio-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.portfolio-items__item {
+    margin-right: 15px;
+}
+
+.portfolio-items__item:last-child {
+    margin-right: 0;
+}
+
+.portfolio-items__thumbnail {
+    width: 250px;
+    height: 250px;
+    background-color: #000000;
+}
+
+.portfolio-tags {
+    margin-top: 15px;
+}
+
+.portfolio-tags__tag {
+    display: inline-block;
+    padding: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #6e6666;
+    color: #ffffff;
 }
 
 @media (max-width: 480px) {
