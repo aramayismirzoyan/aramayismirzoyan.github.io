@@ -128,6 +128,16 @@ a:hover {
     color: #ffffff;
 }
 
+@media (max-width: 563px) {
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    .portfolio-items__item {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 480px) {
     .photo {
         width: 150px;
