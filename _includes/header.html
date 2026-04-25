@@ -40,10 +40,10 @@
 				<div class="im_menu">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                        	<li><a href="services.html">My services</a></li>
-                        	<li><a href="blog.html">Blog</a></li>
-                        	<li><a href="contacts.html">Contacts</a></li>
-                        	<li class="active"><a href="about.html">About me</a></li>
+                        	<li class="{% if page.url == '/services/' %}active{% endif %}"><a href="services">My services</a></li>
+                        	<li class="{% if page.url == '/blog/' %}active{% endif %}"><a href="blog">Blog</a></li>
+                        	<li class="{% if page.url == '/contacts/' %}active{% endif %}"><a href="contacts">Contacts</a></li>
+                        	<li class="{% if page.url == '/about/' %}active{% endif %}"><a href="about">About me</a></li>
                         </ul>
 					</div>
 				</div>
