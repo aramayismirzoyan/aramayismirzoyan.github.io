@@ -215,7 +215,7 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
 	</div>
 </div>
 <script type="text/javascript">
-	$('.review-slider').slick({
+	jQuery('.review-slider').slick({
 		arrows: 'none',
 		// autoplay: true,
 		autoplaySpeed: 4000,
