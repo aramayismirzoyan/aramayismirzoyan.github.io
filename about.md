@@ -214,8 +214,9 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
 		</div>
 	</div>
 </div>
+{% capture scripts %}
 <script type="text/javascript">
-	jQuery('.review-slider').slick({
+	$('.review-slider').slick({
 		arrows: 'none',
 		// autoplay: true,
 		autoplaySpeed: 4000,
@@ -223,3 +224,4 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
         adaptiveHeight: true
 	});
 </script>
+{% endcapture %}
