@@ -1,3 +1,4 @@
+---
 layout: default
 title: About
 custom_js: /assets/js/slider.js
