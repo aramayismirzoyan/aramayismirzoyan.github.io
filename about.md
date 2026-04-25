@@ -1,14 +1,6 @@
 layout: default
 title: About
-scripts: | <script type="text/javascript">
-	$('.review-slider').slick({
-		arrows: 'none',
-		// autoplay: true,
-		autoplaySpeed: 4000,
-		dots: true,
-        adaptiveHeight: true
-	});
-</script>
+custom_js: /assets/js/slider.js
 ---
 
 <div class="im_transparent_wrapper im_toppadder80 im_bottompadder80 about-me-block">

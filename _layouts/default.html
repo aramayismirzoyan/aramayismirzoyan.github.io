@@ -42,8 +42,8 @@
 <script src="assets/js/plugins/sparkelslider/EasePack.min.js"></script>
 <script src="assets/js/plugins/slick/slick.min.js"></script>
 <script src="assets/js/custom.js"></script>
-{% if page.scripts %}
-  {{ page.scripts }}
+{% if page.custom_js %}
+  <script src="{{ page.custom_js }}"></script>
 {% endif %}
 </body>
 </html>
