@@ -214,3 +214,12 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$('.review-slider').slick({
+		arrows: 'none',
+		// autoplay: true,
+		autoplaySpeed: 4000,
+		dots: true,
+        adaptiveHeight: true
+	});
+</script>
