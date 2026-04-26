@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 page_name: blog
+description: Blog coming soon
 ---
 
 <div class="im_breadcrums_div">

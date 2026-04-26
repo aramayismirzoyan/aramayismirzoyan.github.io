@@ -2,6 +2,7 @@
 layout: default
 title: Contacts
 page_name: contacts
+description: You can contact me by email to discuss your project
 ---
 
 <div class="im_breadcrums_div">

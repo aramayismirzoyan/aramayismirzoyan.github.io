@@ -3,6 +3,7 @@ layout: default
 title: About
 custom_js: /assets/js/slider.js
 page_name: about
+description: I am a Full-Stack developer with over 9 years of experience, ready to develop your website and provide ongoing support. I can solve your website issues without excuses, even if they fall outside my main stack.
 ---
 
 <div class="im_transparent_wrapper im_toppadder80 im_bottompadder80 about-me-block">

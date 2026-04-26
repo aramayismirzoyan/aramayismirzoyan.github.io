@@ -2,6 +2,7 @@
 layout: default
 title: Website maintenance
 page_name: services
+description: After developing the project, I am ready to offer codebase support services. Code maintenance is essential for project growth. Developing the project is the first step to success. The project is successful when it is easy to maintain.
 ---
 
 <div class="im_breadcrums_div">
