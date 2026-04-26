@@ -3297,6 +3297,20 @@ ul.im_footer_contact li span{
     font-size: 17px;
 }
 
+@media (max-width: 400px) {
+	.email-suggestion {
+		font-size: 16px;
+	}
+
+	.services-block ul li a {
+		font-style: 18px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.im_logo {
         height: 80px!important;
