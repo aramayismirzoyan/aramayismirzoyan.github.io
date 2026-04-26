@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contacts
+page_name: contacts
 ---
 
 <div class="im_breadcrums_div">

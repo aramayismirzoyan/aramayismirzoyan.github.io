@@ -1,6 +1,7 @@
 ---
 layout: default
 title: My services
+page_name: services
 ---
 
 <div class="im_breadcrums_div">

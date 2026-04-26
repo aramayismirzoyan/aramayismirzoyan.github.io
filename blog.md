@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+page_name: blog
 ---
 
 <div class="im_breadcrums_div">

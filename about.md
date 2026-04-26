@@ -2,6 +2,7 @@
 layout: default
 title: About
 custom_js: /assets/js/slider.js
+page_name: about
 ---
 
 <div class="im_transparent_wrapper im_toppadder80 im_bottompadder80 about-me-block">
