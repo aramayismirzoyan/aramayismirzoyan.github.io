@@ -19,7 +19,7 @@ permalink: /laravel-development/
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>                        
 						<li class="active">
-							<a href="services.html">Services</a>
+							<a href="/services">Services</a>
 						</li>
 						<li class="active">
 							<span>Laravel Development</span>
