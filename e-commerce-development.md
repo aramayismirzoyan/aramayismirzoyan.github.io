@@ -3,6 +3,7 @@ layout: default
 title: E-commerce Development
 page_name: services
 description: I can create an online store or another e-commerce functionality based on the Laravel framework or WordPress CMS.
+permalink: /e-commerce-development/
 ---
 
 <div class="im_breadcrums_div">

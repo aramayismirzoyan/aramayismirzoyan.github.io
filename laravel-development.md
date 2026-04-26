@@ -3,6 +3,7 @@ layout: default
 title: Laravel Development
 page_name: services
 description: Laravel development and maintenance
+permalink: /laravel-development/
 ---
 
 <div class="im_breadcrums_div">

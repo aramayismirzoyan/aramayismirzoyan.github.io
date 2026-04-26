@@ -3,6 +3,7 @@ layout: default
 title: Contacts
 page_name: contacts
 description: You can contact me by email to discuss your project
+permalink: /contacts/
 ---
 
 <div class="im_breadcrums_div">

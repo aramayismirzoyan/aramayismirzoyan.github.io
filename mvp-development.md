@@ -3,6 +3,7 @@ layout: default
 title: MVP Development
 page_name: services
 description: If you have a new project idea, I can create the minimum viable product for you. I pay attention to the quality of the code and architecture, but try to find the balance between code features and deadlines.
+permalink: /mvp-development/
 ---
 
 <div class="im_breadcrums_div">

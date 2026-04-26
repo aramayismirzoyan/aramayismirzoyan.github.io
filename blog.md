@@ -3,6 +3,7 @@ layout: default
 title: Blog
 page_name: blog
 description: Blog coming soon
+permalink: /blog/
 ---
 
 <div class="im_breadcrums_div">

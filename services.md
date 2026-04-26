@@ -3,6 +3,7 @@ layout: default
 title: My services
 page_name: services
 description: Website development services. I can develop a website of any complexity for your business
+permalink: /services/
 ---
 
 <div class="im_breadcrums_div">

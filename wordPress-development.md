@@ -3,6 +3,7 @@ layout: default
 title: WordPress Development
 page_name: services
 description: WordPress website development and maintenance
+permalink: /wordPress-development/
 ---
 
 <div class="im_breadcrums_div">
