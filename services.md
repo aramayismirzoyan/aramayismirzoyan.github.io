@@ -2,6 +2,7 @@
 layout: default
 title: My services
 page_name: services
+description: Website development services. I can develop a website of any complexity for your business
 ---
 
 <div class="im_breadcrums_div">

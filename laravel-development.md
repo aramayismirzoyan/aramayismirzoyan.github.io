@@ -2,6 +2,7 @@
 layout: default
 title: Laravel Development
 page_name: services
+description: Laravel development and maintenance
 ---
 
 <div class="im_breadcrums_div">

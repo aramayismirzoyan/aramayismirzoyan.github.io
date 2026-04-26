@@ -9,19 +9,27 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
 
+    <meta name="description" content="{{ page.description | default: 'Aramayis Mirzoyan. Full-Stack developer' }}">
+	  <meta name="keywords" content="{{ page.keywords | default: 'website, developer', 'php', 'html', 'css', 'javascript', 'laravel' }}">
+	  <meta property="og:title" content="{{ page.title }}">
+	  <meta property="og:description" content="{{ page.description }}">
+	  <meta property="og:image" content="{{ page.image | absolute_url }}">
+	  <meta property="og:url" content="{{ page.url | absolute_url }}">
+	  <meta property="og:type" content="website">
+	  <meta name="twitter:card" content="summary_large_image">
+	  <link rel="canonical" href="{{ page.url | absolute_url }}">
+		<meta name="author" content="Aramayis Mirzoyan">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    
     <meta name="MobileOptimized" content="320">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.css">
-	<link rel="stylesheet" href="assets/css/fonts.css">
-	<link rel="stylesheet" href="assets/js/plugins/owl/owl.carousel.css">
-	<link rel="stylesheet" href="assets/js/plugins/c3/c3.css">
-	<link rel="stylesheet" href="assets/js/plugins/slick/slick.css">
-	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/fonts.css">
+		<link rel="stylesheet" href="assets/js/plugins/owl/owl.carousel.css">
+		<link rel="stylesheet" href="assets/js/plugins/c3/c3.css">
+		<link rel="stylesheet" href="assets/js/plugins/slick/slick.css">
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
  	{% include header.html %}
