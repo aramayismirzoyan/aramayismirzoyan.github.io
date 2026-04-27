@@ -90,10 +90,10 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 im_bottompadder30">
                 <div class="im_product_div">
                     <div class="im_product_img">
-                        <img src="images/iqvel_thumbnail.jpg" class="img-responsive" alt="">
+                        <img src="/images/iqvel_thumbnail.jpg" class="img-responsive" alt="">
                         <div class="im_product_overlay"></div>
                         <div class="im_overlay_btn">
-                            <a href="images/iqvel.png" class="zoom_icon" target="_blank" title="view project"><i class="fa fa-search"></i></a>
+                            <a href="/images/iqvel.png" class="zoom_icon" target="_blank" title="view project"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="im_product_data">
@@ -108,10 +108,10 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 im_bottompadder30">
                 <div class="im_product_div">
                     <div class="im_product_img">
-                        <img src="images/feyabridal_thumbnail.jpg" class="img-responsive" alt="">
+                        <img src="/images/feyabridal_thumbnail.jpg" class="img-responsive" alt="">
                         <div class="im_product_overlay"></div>
                         <div class="im_overlay_btn">
-                            <a href="images/feyabridal.jpg" target="_blank" class="zoom_icon" title="view project"><i class="fa fa-search"></i></a>
+                            <a href="/images/feyabridal.jpg" target="_blank" class="zoom_icon" title="view project"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="im_product_data">
@@ -128,7 +128,7 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 im_bottompadder30">
                 <div class="im_product_div">
                     <div class="im_product_img">
-                        <img src="images/laravel_safe_migrations_thumbnail.jpg" class="img-responsive" alt="">
+                        <img src="/images/laravel_safe_migrations_thumbnail.jpg" class="img-responsive" alt="">
                         <div class="im_product_overlay"></div>
                         <div class="im_overlay_btn">
                             <a href="https://github.com/aramayismirzoyan/laravel-safe-migrations" target="_blank" title="view website"><i class="fa fa-link"></i></a>
