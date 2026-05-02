@@ -6,9 +6,17 @@
 <!-- BEGIN HEAD -->
 
 <head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSFQQW7BXX"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-CSFQQW7BXX');
+		</script>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-
     <meta name="description" content="{{ page.description | default: 'Aramayis Mirzoyan. Full-Stack developer' }}">
 	  <meta name="keywords" content="{{ page.keywords | default: 'website, developer, php, html, php, css, javascript,laravel' }}"> 
 	  <meta property="og:title" content="{{ page.title }}">
@@ -33,15 +41,6 @@
 		<link rel="stylesheet" href="/assets/js/plugins/c3/c3.css">
 		<link rel="stylesheet" href="/assets/js/plugins/slick/slick.css">
 		<link rel="stylesheet" href="/style.css">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSFQQW7BXX"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-CSFQQW7BXX');
-		</script>
 </head>
 <body>
  	{% include header.html %}
