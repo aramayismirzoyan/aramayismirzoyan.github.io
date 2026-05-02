@@ -25,7 +25,7 @@ permalink: /about/
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="im_about_data">
 							<h3>Aramayis Mirzoyan</h3>
-							<p>Hello, I am a Full-Stack developer with over 9 years of experience, ready to develop your website and provide ongoing support. I can solve your website issues without excuses, even if they fall outside my main stack.
+							<p>Hello, I am a Full-Stack web developer with over 9 years of experience. I help startups and small to medium-sized businesses solve technical challenges. I can solve your website issues without excuses, even if they fall outside my main stack.
 
 I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS, and jQuery. I am open to new technologies and programming languages if your project needs that. I pay attention to code quality.</p>
 						</div>
