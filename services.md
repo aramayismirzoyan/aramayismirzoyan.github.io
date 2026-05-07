@@ -2,7 +2,7 @@
 layout: default
 title: My services
 page_name: services
-description: Website development services. I can develop a website of any complexity for your business
+description: Website development services. I am a Full-Stack web developer with over 9 years of experience. I help startups and small to medium-sized businesses solve technical challenges. I can develop a website of any complexity for your business
 permalink: /services/
 ---
 
