@@ -1,32 +1,10 @@
----
-layout: default
-title: Blog
+title: Aramayis Mirzoyan
+description: Full-Stack Developer
+url: "https://aramayismirzoyan.com"
+plugins:
+  - jekyll-paginate-v2
 
 pagination:
   enabled: true
-  collection: posts
   per_page: 5
   permalink: /blog/page/:num/
----
-
-{% for post in paginator.posts %}
-<article>
-  <h2>
-    <a href="{{ post.url | relative_url }}">
-      {{ post.title }}
-    </a>
-  </h2>
-
-  <p>{{ post.excerpt }}</p>
-</article>
-{% endfor %}
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">Previous</a>
-  {% endif %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Next</a>
-  {% endif %}
-</div>
