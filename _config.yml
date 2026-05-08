@@ -2,9 +2,16 @@ title: Aramayis Mirzoyan
 description: Full-Stack Developer
 url: "https://aramayismirzoyan.com"
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: /blog/page/:num/
+paginate: 5
+paginate_path: "/blog/page/:num/"
+
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
