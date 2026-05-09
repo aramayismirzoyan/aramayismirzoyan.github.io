@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Blog
+page_name: blog
 ---
 
 {% for post in paginator.posts %}
@@ -11,7 +12,7 @@ title: Blog
       </a>
     </h2>
 
-    <p>{{ post.excerpt }}</p>
+    <p>{{ post.description }}</p>
   </article>
 {% endfor %}
 
