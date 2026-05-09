@@ -35,6 +35,20 @@ layout: default
             <div class="col-lg-9">
             	{{ content }}
             </div>
+            <div class="col-lg-3">
+                <div class="categories">
+                    <ul>
+                        {% for category in site.categories %}
+                            <li>
+                            <a href="/category/{{ category[0] | slugify }}/">
+                                {{ category[0] }} ({{ category[1].size }})
+                            </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    
+                </div>                
+            </div>
         </div>
     </div>
 </div>

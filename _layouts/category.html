@@ -10,12 +10,15 @@ layout: default
                     <div class="im_titlediv">
                         <span class="im-left-top-border"></span>
                         <span class="im-right-bottom-border"></span>
-                        <h2>Blog</h2>
+                        <h2>{{ page.title }}</h2>
                     </div>
                     <ol class="breadcrumb">
-                        <li><a href="/">Home</a></li>                        
+                        <li><a href="/">Home</a></li>    
+                        <li class="active">
+							<a href="/blog">Blog</a>
+						</li>                    
 						<li class="active">
-							<span>Blog</span>
+							<span>{{ page.title }}</span>
 						</li>
                     </ol>
                 </div>
@@ -25,28 +28,15 @@ layout: default
 </div>
 <div class="clear"></div>
 
-
 <div class="blog-articles">
     <div class="container">
         <div class="row">
             <div class="col-lg-9">
-            	{{ content }}
+                {{ content }}
             </div>
             <div class="col-lg-3">
-                <div class="categories">
-                    <ul>
-                        {% for category in site.categories %}
-                            <li>
-                            <a href="/category/{{ category[0] | slugify }}/">
-                                {{ category[0] }} ({{ category[1].size }})
-                            </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    
-                </div>                
+                
             </div>
         </div>
     </div>
 </div>
-
