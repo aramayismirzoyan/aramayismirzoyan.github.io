@@ -4,6 +4,6 @@ title: "My first post"
 description: "My first post"
 ---
 
-# Hello world 1
+# Hello world
 
 This is my first post
