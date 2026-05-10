@@ -35,7 +35,7 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
 		</div>
 	</div>
 </div>
-<div class="im_service_section im_toppadder80 im_bottompadder50">
+<div class="im_service_section im_bottompadder50">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 im_bottompadder50 about-me-block">
