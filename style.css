@@ -28,6 +28,9 @@ p {
 	display: -webkit-flex;
 	display: flex; 
 }
+.blog-articles article {
+	margin-bottom: 40px;
+}
 #banner,
 .im_slider_data,
 .im_slider_overlay {
