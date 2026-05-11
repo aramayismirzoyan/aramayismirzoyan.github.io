@@ -17,11 +17,9 @@ permalink: /contacts/
                         <h2>Contacts</h2>
                     </div>
                     <ol class="breadcrumb">
-                        <li><a href="/">Главная</a></li>                        
+                        <li><a href="/">Home</a></li>                        
 						<li class="active">
-							<!-- <a href="#">test</a> -->
 							<span>Contacts</span>
-							<!-- <span></span> -->
 						</li>
                     </ol>
                 </div>
