@@ -36,7 +36,7 @@ This problem is especially common in large WordPress websites, online stores, or
 
 ## You Get on Frontend a Lot of Stuff Without Pagination
 
-A very common mistake is loading too much data on the frontend without pagination. For example, showing thousands of products, posts, or records on one page forces both the server and browser to process huge amounts of data at once.
+A very common mistake is loading too much data on the Frontend without pagination. For example, showing thousands of products, posts, or records on one page forces both the server and browser to process huge amounts of data at once.
 
 This creates slow loading times, increased memory usage, and poor user experience. Pagination, lazy loading, or infinite scrolling can reduce the amount of content loaded at one time and dramatically improve performance.
 
