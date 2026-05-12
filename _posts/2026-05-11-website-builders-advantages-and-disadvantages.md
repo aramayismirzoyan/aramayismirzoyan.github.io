@@ -18,7 +18,7 @@ The main advantage of website builders is their ease of use. Website owners can 
 
 Despite their advantages, website builders have several weak sides that can seriously affect a website’s quality and long-term scalability.
 
-### Poor Performance and Heavy Code
+## Poor Performance and Heavy Code
 
 One of the biggest problems is performance. Page builders usually generate a huge amount of unnecessary HTML, CSS, and JavaScript code. Even a visually simple page may contain thousands of extra lines of code running in the background.
 
