@@ -3,6 +3,7 @@ description: Full-Stack Developer
 url: "https://aramayismirzoyan.com"
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 paginate: 5
 paginate_path: "/blog/page/:num/"
