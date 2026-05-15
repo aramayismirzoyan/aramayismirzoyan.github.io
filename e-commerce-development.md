@@ -1,8 +1,10 @@
 ---
 layout: default
-title: E-commerce Development
+title: E-commerce Development Services — Online Store Creation with Laravel & WordPress
 page_name: services
-description: I can create an online store or another e-commerce functionality based on the Laravel framework or WordPress CMS.
+description: "Professional e-commerce development services using Laravel and WordPress. I create scalable online stores and custom e-commerce solutions based on functionality complexity, scalability needs, and project timelines. Contact: aramayismirzoyan@yahoo.com"
+og_description: Professional e-commerce development services using Laravel and WordPress. I build scalable online stores and custom e-commerce solutions based on functionality, scalability requirements, and development timelines.
+keywords: e-commerce development, online store development, Laravel e-commerce, WordPress e-commerce, custom online store, webshop development, scalable e-commerce solutions, e-commerce website developer, full-stack e-commerce, online shop creation
 permalink: /e-commerce-development/
 ---
 

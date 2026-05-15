@@ -1,8 +1,11 @@
 ---
 layout: default
-title: WordPress Development
+title: WordPress Development Services — Website Creation, Maintenance & Support
+description: >
+    Professional WordPress development services including website creation, template-based development, HTML to WordPress integration, bug fixing, security updates, and plugin development. I build online stores, blogs, landing pages, and multi-page websites. Contact: aramayismirzoyan@yahoo.com
+og_description: "Build and maintain modern WordPress websites: online stores, blogs, landing pages, and multi-page sites. Template customization, HTML integration, plugin development, and long-term support."
+keywords: WordPress development, WordPress developer, WordPress website creation, WordPress maintenance, WordPress support, custom WordPress development, WordPress plugin development, HTML to WordPress, website bug fixing, WordPress security, e-commerce WordPress, landing page development, hire freelance WordPress developer, hire WordPress developer, hire web developer
 page_name: services
-description: WordPress website development and maintenance
 permalink: /wordPress-development/
 ---
 

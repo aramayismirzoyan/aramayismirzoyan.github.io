@@ -1,8 +1,10 @@
 ---
 layout: default
-title: MVP Development
+title: MVP Development Services — Fast & Scalable Product Development
 page_name: services
-description: If you have a new project idea, I can create the minimum viable product for you. I pay attention to the quality of the code and architecture, but try to find the balance between code features and deadlines.
+description: "Professional MVP development services for startups and new ideas. I build fast, scalable, and maintainable minimum viable products with clean architecture, balanced development speed, code testing features, server setup, and future support. Contact: aramayismirzoyan@yahoo.com"
+og_description: Build your MVP quickly with clean architecture and scalable code. Balanced development approach for startups with testing, deployment, and future support.
+keywords: MVP development, minimum viable product, startup MVP, fast MVP development, Laravel MVP, product prototype development, scalable MVP, web application MVP, backend development, server configuration, code testing, startup development services
 permalink: /mvp-development/
 ---
 

@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Laravel Development
+title: Laravel Development Services — Custom Web Development & Maintenance
 page_name: services
-description: Laravel development and maintenance
+description: "Professional Laravel development services: custom web applications, MVP development, CRM systems, e-commerce platforms, social networks, and full-stack solutions using Laravel, Vue.js, and React. Codebase maintenance and long-term support available. Contact: aramayismirzoyan@yahoo.com"
+og_description: Build scalable and secure web applications with Laravel. MVPs, CRM systems, e-commerce platforms, social networks, and full-stack solutions using Vue.js and React.
+keywords: Laravel development, Laravel developer, custom web development, Laravel maintenance, full-stack development, Vue.js Laravel, React Laravel, CRM systems, e-commerce development, MVP development, web applications, backend development, hire freelance laravel developer, hire laravel developer, hire web developer
 permalink: /laravel-development/
 ---
 
