@@ -2,6 +2,7 @@
 layout: post
 title: "Why Does Your Website Work Slowly? Common Performance Problems"
 description: "Learn the most common reasons why websites become slow, including weak hosting, heavy images, unoptimized frontend code, database queries, and missing pagination."
+og_description: "Learn the most common reasons why websites become slow, including weak hosting, heavy images, unoptimized frontend code, database queries, and missing pagination."
 keywords: "website speed, slow website, website optimization, frontend optimization, database optimization, website performance, heavy images, weak hosting, pagination, SEO performance"
 blog_description: "Many website owners wonder why their website feels slow even after adding modern design and features. In most cases, the problem is not a single issue but a combination of poor optimization decisions. A slow website affects user experience, SEO rankings, and conversion rates. Here are some of the most common reasons your website is slow."
 page_name: blog
