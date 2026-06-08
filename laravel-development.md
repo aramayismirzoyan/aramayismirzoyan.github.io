@@ -55,7 +55,11 @@ permalink: /laravel-development/
                         	<li>CRM systems</li>
                         	<li>websites with custom logic</li>
                         </ul>
-                         <h3 class="email-suggestion">If you need Laravel development or maintenance services, contact me <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h3>
+                        <div class="email-suggestion">
+                            <h3>If you need Laravel development or maintenance services, feel free to contact me to discuss your project: </h3>
+                            <h4>Email: <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h4>
+                            <h4>WhatsApp: <a href="https://wa.me/37495191644" target="_blank">+37495191644</a></h4>
+                        </div>
                     </div>
                 </div>
             </div>

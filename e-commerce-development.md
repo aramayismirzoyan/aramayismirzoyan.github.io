@@ -47,7 +47,11 @@ permalink: /e-commerce-development/
                         	<li>scalability</li>
                         	<li>development timeframes</li>
                         </ul>
-                         <h3 class="email-suggestion">If you need an e-commerce website, contact me <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h3>
+                         <div class="email-suggestion">
+                            <h3>If you need an e-commerce website, feel free to contact me to discuss your project: </h3>
+                            <h4>Email: <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h4>
+                            <h4>WhatsApp: <a href="https://wa.me/37495191644" target="_blank">+37495191644</a></h4>
+                        </div>
                     </div>
                 </div>
             </div>

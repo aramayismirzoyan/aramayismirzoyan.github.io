@@ -49,7 +49,11 @@ permalink: /mvp-development/
                         	<li>fast development without much loss of quality</li>
                         	<li>server configuration</li>
                         </ul>
-                         <h3 class="email-suggestion">If you need an MVP project, contact me <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h3>
+                         <div class="email-suggestion">
+                            <h3>If you need an MVP project, feel free to contact me to discuss your project: </h3>
+                            <h4>Email: <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h4>
+                            <h4>WhatsApp: <a href="https://wa.me/37495191644" target="_blank">+37495191644</a></h4>
+                        </div>
                     </div>
                 </div>
             </div>

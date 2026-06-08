@@ -45,6 +45,7 @@ permalink: /wordPress-development/
                         <ul>
                         	<li>create a website using a ready-made template</li>
                         	<li>integrate HTML into WordPress and develop a WordPress website from a design mockup</li>
+                            <li>website development based on a custom design tailored to your business requirements and brand identity</li>
                         	<li>support your existing WordPress website by fixing bugs and security issues</li>
                         	<li>plugin development</li>
                         </ul>
@@ -56,7 +57,11 @@ permalink: /wordPress-development/
                         	<li>personal websites</li>
                         	<li>landing pages</li>
                         </ul>
-                         <h3 class="email-suggestion">If you need a new WordPress website or support for an existing one, contact me <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h3>
+                        <div class="email-suggestion">
+                            <h3>If you need a new WordPress website or support for an existing one, feel free to contact me to discuss your project: </h3>
+                            <h4>Email: <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></h4>
+                            <h4>WhatsApp: <a href="https://wa.me/37495191644" target="_blank">+37495191644</a></h4>
+                        </div>
                     </div>
                 </div>
             </div>
