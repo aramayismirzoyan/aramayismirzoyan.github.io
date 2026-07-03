@@ -3303,6 +3303,48 @@ ul.im_footer_contact li span{
     font-size: 17px;
 }
 
+.scroll-down-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+
+/* стрелка */
+.scroll-down-btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  margin-top: -3px;
+}
+
+.scroll-down-btn:hover {
+  opacity: 0.7;
+  transform: translateX(-50%) scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-6px); }
+}
+
+.scroll-down-btn {
+  animation: bounce 2s infinite;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.im_logo {
         height: 80px!important;
@@ -3592,13 +3634,27 @@ ul.im_footer_contact li span{
 	font-size: 20px;
 }
 
+.services-block_landing ul {
+	text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-block_landing ul li {
+	margin-bottom: 10px;
+}
+
+.services-block_landing ul li a {
+	font-size: 25px;
+}
+
 .email-suggestion {
 	margin-top: 40px;
 	margin-bottom: 0;
     font-size: 20px;
 }
 .about-email-suggestion {
-	margin-top: 60px;
+	/*margin-top: 60px;*/
 	margin-bottom: 40px;
 	text-align: center;
 }

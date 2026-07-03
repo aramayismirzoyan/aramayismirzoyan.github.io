@@ -1,13 +1,26 @@
 ---
 layout: default
-title: About
+title: Website Development
 custom_js: /assets/js/slider.js
-page_name: about
+page_name: website-development
 description: I am a Full-Stack developer with over 9 years of experience, ready to develop your website and provide ongoing support. I can solve your website issues without excuses, even if they fall outside my main stack.
-permalink: /about/
+permalink: /website-development/
 ---
-
-<div class="im_transparent_wrapper im_toppadder80 im_bottompadder80 about-me-block">
+<div class="im_mainslider" id="banner">
+	<canvas id="demo-canvas"></canvas>
+	<div class="im_slider_data">
+		<img src="/images/main_slider_bg.jpg" class="img-responsive" alt="">
+		<div class="im_slider_overlay">
+			<div class="im_inner_overlay">
+				<h2>Professional Website Development</h2>
+				<p>Modern, scalable websites backed by 9+ years of experience</p>
+				<a href="/contacts" class="im_btn">Contact me </a>
+			</div>
+		</div>
+	</div>
+	<a href="#about-me-section" class="scroll-down-btn"></a>
+</div>
+<div class="im_transparent_wrapper im_bottompadder80 about-me-block" id="about-me-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 im_bottompadder50">
@@ -207,6 +220,36 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
 				  	</div>	
 				  </div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="im_transparent_wrapper im_toppadder80">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 im_bottompadder30">
+				<div class="im_headingdiv">
+					<h2>My services</h2>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 services-block services-block_landing">
+				<ul>
+                	<li>
+                		<a href="/wordPress-development">WordPress Development</a>
+                	</li>
+                	<li>
+                		<a href="/laravel-development">Laravel Development</a>
+                	</li>
+                	<li>
+                		<a href="/e-commerce-development">E-commerce Development</a>
+                	</li>
+                	<li>
+                		<a href="/mvp-development">MVP Development</a>
+                	</li>
+                	<li>
+                		<a href="/website-maintenance">Website maintenance</a>
+                	</li>
+                </ul>
 			</div>
 		</div>
 	</div>

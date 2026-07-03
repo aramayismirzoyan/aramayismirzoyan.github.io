@@ -193,4 +193,15 @@ Copyright (c) 2017
 			}
 	});
 
+	$('.scroll-down-btn').on('click', function (e) {
+	    e.preventDefault();
+
+	    const headerHeight = $('.im_header_wrapper').outerHeight();
+	    const targetOffset = $('#about-me-section').offset().top - headerHeight - 100;
+
+	    $('html, body').animate({
+	        scrollTop: targetOffset
+	    }, 800);
+	});
+
 })(jQuery);

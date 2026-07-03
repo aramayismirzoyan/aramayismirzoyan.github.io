@@ -8,7 +8,7 @@ blog_description: "Frontend frameworks are modern technologies used to build int
 
 Using a frontend framework has both advantages and disadvantages."
 page_name: blog
-categories: [MVP]
+categories: [frontend]
 ---
 
 Frontend frameworks are modern technologies used to build interactive and complex user interfaces. There are many frontend frameworks available today, but the most popular ones are **React**, **Vue.js**, and **Angular**.
