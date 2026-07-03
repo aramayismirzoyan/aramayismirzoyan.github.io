@@ -1,0 +1,19 @@
+---
+layout: category
+title: Frontend
+description: Explore articles about frontend development, UI/UX engineering, JavaScript frameworks, React, Vue, CSS architecture, performance optimization, and modern interface design practices.
+og_description: Explore articles about frontend development, UI/UX engineering, JavaScript frameworks, React, Vue, CSS architecture, performance optimization, and modern interface design practices.
+page_name: blog
+---
+
+<h1>Category: Frontend</h1>
+
+{% for post in site.categories.frontend %}
+  <article>
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  </article>
+{% endfor %}
