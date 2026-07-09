@@ -29,7 +29,7 @@ permalink: /contacts/
 </div>
 <div class="clear"></div>
 
-<div class="im_transparent_wrapper im_toppadder80 im_bottompadder80">
+<div class="im_transparent_wrapper im_toppadder30 im_bottompadder80">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
