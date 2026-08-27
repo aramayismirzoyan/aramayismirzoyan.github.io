@@ -139,7 +139,6 @@
 
 @media (max-width: 991px) {
 	.im_menu ul.nav.navbar-nav li.im_lang_dropdown_item {
-		width: 100%;
 		margin: 0 0 10px;
 		padding: 0 10px;
 		justify-content: flex-start;
@@ -153,17 +152,11 @@
 		right: auto;
 		left: 0;
 		top: auto;
-		bottom: calc(100% + 8px);
+		/*bottom: calc(100% + 8px);*/
 		transform: translateY(6px);
 	}
 
 	.lang-dropdown.is-open .lang-dropdown__menu {
 		transform: translateY(0);
-	}
-}
-
-@media (max-width: 480px) {
-	.lang-dropdown__label {
-		display: none;
 	}
 }
