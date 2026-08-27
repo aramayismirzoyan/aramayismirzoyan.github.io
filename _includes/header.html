@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="im_logo">
-					<a href="/">
+					<a href="{% include lang-prefix.html %}/">
 						<div class="main-logo flex-container">
 							<div class="main-logo__svg">
 								<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@
 							</div>
 							<div>
 								<span class="main-logo__name">Aramayis Mirzoyan</span>
-								<span class="main-logo__role">Web Developer</span>
+								<span class="main-logo__role">{% include i18n-string.html key="web_developer" %}</span>
 							</div>	
 						</div>
 					</a>				
@@ -40,10 +40,13 @@
 				<div class="im_menu">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                        	<li class="{% if page.page_name == 'services' %}active{% endif %}"><a href="/services">My services</a></li>
-                        	<li class="{% if page.page_name == 'blog' %}active{% endif %}"><a href="/blog">Blog</a></li>
-                        	<li class="{% if page.page_name == 'contacts' %}active{% endif %}"><a href="/contacts">Contacts</a></li>
-                        	<li class="{% if page.page_name == 'about' %}active{% endif %}"><a href="/about">About me</a></li>
+                        	<li class="{% if page.page_name == 'services' %}active{% endif %}"><a href="{% include lang-prefix.html %}/services">{% include i18n-string.html key="nav_services" %}</a></li>
+                        	<li class="{% if page.page_name == 'blog' %}active{% endif %}"><a href="{% include lang-prefix.html %}/blog">{% include i18n-string.html key="nav_blog" %}</a></li>
+                        	<li class="{% if page.page_name == 'contacts' %}active{% endif %}"><a href="{% include lang-prefix.html %}/contacts">{% include i18n-string.html key="nav_contacts" %}</a></li>
+                        	<li class="{% if page.page_name == 'about' %}active{% endif %}"><a href="{% include lang-prefix.html %}/about">{% include i18n-string.html key="nav_about" %}</a></li>
+                        	<li class="im_lang_dropdown_item">
+                        		{% include language-switcher.html %}
+                        	</li>
                         </ul>
 					</div>
 				</div>

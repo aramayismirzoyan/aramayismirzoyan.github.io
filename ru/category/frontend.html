@@ -1,0 +1,31 @@
+---
+layout: category
+title: Frontend
+description: Статьи о frontend-разработке, UI/UX инженерии, JavaScript фреймворках, React, Vue, CSS архитектуре, оптимизации производительности и современных практиках проектирования интерфейсов.
+og_description: Статьи о frontend-разработке, UI/UX инженерии, JavaScript фреймворках, React, Vue, CSS архитектуре, оптимизации производительности и современных практиках проектирования интерфейсов.
+page_name: blog
+lang: ru
+translation_key: category-frontend
+permalink: /ru/category/frontend/
+---
+
+<h1>{% include i18n-string.html key="category" %}: Frontend</h1>
+
+{% for post in site.ru_posts %}
+  {% assign show = false %}
+  {% for cat in post.categories %}
+    {% assign cat_lower = cat | downcase %}
+    {% if cat_lower == "frontend" %}
+      {% assign show = true %}
+    {% endif %}
+  {% endfor %}
+  {% if show %}
+  <article>
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  </article>
+  {% endif %}
+{% endfor %}

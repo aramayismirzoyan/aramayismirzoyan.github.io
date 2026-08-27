@@ -3,6 +3,8 @@ layout: default
 title: About
 custom_js: /assets/js/slider.js
 page_name: about
+lang: en
+translation_key: about
 description: I am a Full-Stack developer with over 9 years of experience, ready to develop your website and provide ongoing support. I can solve your website issues without excuses, even if they fall outside my main stack.
 permalink: /about/
 ---
@@ -144,6 +146,9 @@ I work mainly with PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS
             </div>
 		</div>
 	</div>
+</div>
+<div>
+	<h3 class="text-center">I can provide more examples from my portfolio upon request</h3>
 </div>
 <div class="im_transparent_wrapper im_toppadder80">
 	<div class="container">

@@ -6,10 +6,12 @@ og_description: "Learn the most common reasons why websites become slow, includi
 keywords: "website speed, slow website, website optimization, frontend optimization, database optimization, website performance, heavy images, weak hosting, pagination, SEO performance"
 blog_description: "Many website owners wonder why their website feels slow even after adding modern design and features. In most cases, the problem is not a single issue but a combination of poor optimization decisions. A slow website affects user experience, SEO rankings, and conversion rates. Here are some of the most common reasons your website is slow."
 page_name: blog
+lang: en
+translation_key: why-does-your-website-work-slowly
 categories: [website]
 ---
 
-Many website owners wonder why their website feels slow even after adding modern design and features. In most cases, the problem is not a single issue but a combination of poor optimization decisions. A slow website affects user experience, SEO rankings, and conversion rates. Here are some of the most common reasons your website is slow.
+Many website owners wonder why their website feels slow. In most cases, the problem is not a single issue but a combination of poor optimization decisions. A slow website affects user experience, SEO rankings, and conversion rates. Here are some of the most common reasons your website is slow.
 
 ## Weak Hosting
 

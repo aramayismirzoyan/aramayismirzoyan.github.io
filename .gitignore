@@ -1,5 +1,11 @@
+Gemfile
+Gemfile.lock
 _site
 .sass-cache
 .jekyll-cache
-Gemfile
-Gemfile.lock
+vendor/bundle
+scripts
+_write_all_hy_posts.py
+.bundle
+vendor
+bin/

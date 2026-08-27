@@ -2,6 +2,8 @@
 layout: default
 title: Contacts
 page_name: contacts
+lang: en
+translation_key: contacts
 description: You can contact me by email to discuss your project
 permalink: /contacts/
 ---

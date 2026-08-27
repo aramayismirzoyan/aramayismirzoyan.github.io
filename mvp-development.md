@@ -2,6 +2,8 @@
 layout: default
 title: MVP Development Services — Fast & Scalable Product Development
 page_name: services
+lang: en
+translation_key: mvp-development
 description: "Professional MVP development services for startups and new ideas. I build fast, scalable, and maintainable minimum viable products with clean architecture, balanced development speed, code testing features, server setup, and future support. Contact: aramayismirzoyan@yahoo.com"
 og_description: Build your MVP quickly with clean architecture and scalable code. Balanced development approach for startups with testing, deployment, and future support.
 keywords: MVP development, minimum viable product, startup MVP, fast MVP development, Laravel MVP, product prototype development, scalable MVP, web application MVP, backend development, server configuration, code testing, startup development services

@@ -13,9 +13,9 @@ layout: default
                         <h2>{{ page.title }}</h2>
                     </div>
                     <ol class="breadcrumb">
-                        <li><a href="/">Home</a></li>    
+                        <li><a href="{% include lang-prefix.html %}/">{% include i18n-string.html key="home" %}</a></li>    
                         <li class="active">
-							<a href="/blog">Blog</a>
+							<a href="{% include lang-prefix.html %}/blog">{% include i18n-string.html key="blog" %}</a>
 						</li>                    
 						<li class="active">
 							<span>{{ page.title }}</span>
@@ -37,16 +37,7 @@ layout: default
             </div>
             <div class="col-lg-3">
                 <div class="categories">
-                    <ul>
-                        {% for category in site.categories %}
-                            <li>
-                            <a href="/category/{{ category[0] | slugify }}/">
-                                {{ category[0] }} ({{ category[1].size }})
-                            </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    
+                    {% include category-sidebar.html %}
                 </div>                
             </div>
         </div>

@@ -1,0 +1,31 @@
+---
+layout: category
+title: Website
+description: Статьи о веб-разработке, Laravel, WordPress, стартапах, разработке MVP, фрилансе и современных технологиях для создания масштабируемых веб-приложений.
+og_description: Статьи о веб-разработке, Laravel, WordPress, стартапах, разработке MVP, фрилансе и современных технологиях для создания масштабируемых веб-приложений.
+page_name: blog
+lang: ru
+translation_key: category-website
+permalink: /ru/category/website/
+---
+
+<h1>{% include i18n-string.html key="category" %}: Website</h1>
+
+{% for post in site.ru_posts %}
+  {% assign show = false %}
+  {% for cat in post.categories %}
+    {% assign cat_lower = cat | downcase %}
+    {% if cat_lower == "website" %}
+      {% assign show = true %}
+    {% endif %}
+  {% endfor %}
+  {% if show %}
+  <article>
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  </article>
+  {% endif %}
+{% endfor %}

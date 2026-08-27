@@ -1,0 +1,37 @@
+{%- assign current_lang = page.lang | default: "en" -%}
+{%- assign lang_codes = "en|ru" | split: "|" -%}
+{%- assign lang_flags = "" | split: "|" -%}
+{%- assign lang_names = "English|Русский" | split: "|" -%}
+
+{%- assign current_flag = "🇬🇧" -%}
+{%- assign current_name = "English" -%}
+{%- for code in lang_codes -%}
+  {%- if code == current_lang -%}
+    {%- assign current_flag = lang_flags[forloop.index0] -%}
+    {%- assign current_name = lang_names[forloop.index0] -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="lang-dropdown">
+  <button type="button" class="lang-dropdown__toggle" aria-expanded="false" aria-haspopup="true" aria-label="Language">
+    <span class="lang-dropdown__flag" aria-hidden="true">{{ current_flag }}</span>
+    <span class="lang-dropdown__label">{{ current_name }}</span>
+    <span class="lang-dropdown__caret" aria-hidden="true"></span>
+  </button>
+  <ul class="lang-dropdown__menu" role="menu">
+    {%- for code in lang_codes -%}
+      {%- unless code == current_lang -%}
+      {%- include lang-url.html lang=code -%}
+      {%- assign idx = forloop.index0 -%}
+      <li role="none">
+        <a href="{{ lang_url | relative_url }}"
+           hreflang="{{ code }}"
+           role="menuitem"
+           class="lang-dropdown__item">
+          <span class="lang-dropdown__item-text">{{ lang_names[idx] }}</span>
+        </a>
+      </li>
+      {%- endunless -%}
+    {%- endfor -%}
+  </ul>
+</div>

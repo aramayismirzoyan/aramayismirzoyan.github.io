@@ -8,6 +8,8 @@ blog_description: "Developing an MVP (Minimum Viable Product) requires launching
 
 The faster you release your product, the less money you spend on development and the sooner you can test your idea on the market."
 page_name: blog
+lang: en
+translation_key: what-technology-to-choose-for-mvp-development
 categories: [MVP]
 ---
 

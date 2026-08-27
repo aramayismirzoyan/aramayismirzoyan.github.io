@@ -1,0 +1,8 @@
+{%- assign current_lang = page.lang | default: "en" -%}
+{%- if current_lang == "ru" -%}
+  {%- assign lang_posts = site.ru_posts -%}
+{%- elsif current_lang == "hy" -%}
+  {%- assign lang_posts = site.hy_posts -%}
+{%- else -%}
+  {%- assign lang_posts = site.posts -%}
+{%- endif -%}

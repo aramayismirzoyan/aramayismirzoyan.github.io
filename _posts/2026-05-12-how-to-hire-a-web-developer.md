@@ -8,6 +8,8 @@ blog_description: "Hiring a web developer may seem simple at first glance, but i
 
 Before choosing a developer, it is important to clearly understand what kind of project you are building, what your goals are, and how long you plan to maintain and grow the product. Different types of projects require different levels of expertise."
 page_name: blog
+lang: en
+translation_key: how-to-hire-a-web-developer
 categories: [website]
 ---
 

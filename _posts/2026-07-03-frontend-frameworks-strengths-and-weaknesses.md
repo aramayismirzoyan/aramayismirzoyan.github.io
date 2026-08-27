@@ -8,6 +8,8 @@ blog_description: "Frontend frameworks are modern technologies used to build int
 
 Using a frontend framework has both advantages and disadvantages."
 page_name: blog
+lang: en
+translation_key: frontend-frameworks-strengths-and-weaknesses
 categories: [frontend]
 ---
 

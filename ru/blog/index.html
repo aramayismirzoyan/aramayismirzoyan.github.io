@@ -1,0 +1,21 @@
+---
+layout: posts
+title: Блог
+page_name: blog
+lang: ru
+translation_key: blog
+permalink: /ru/blog/
+---
+
+{% assign sorted_posts = site.ru_posts | sort: 'date' | reverse %}
+{% for post in sorted_posts %}
+  <article>
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+    <p>{{ post.blog_description }}</p>
+  </article>
+{% endfor %}

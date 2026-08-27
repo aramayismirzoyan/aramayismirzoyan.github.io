@@ -6,6 +6,8 @@ description: >
 og_description: "Build and maintain modern WordPress websites: online stores, blogs, landing pages, and multi-page sites. Template customization, HTML integration, plugin development, and long-term support."
 keywords: WordPress development, WordPress developer, WordPress website creation, WordPress maintenance, WordPress support, custom WordPress development, WordPress plugin development, HTML to WordPress, website bug fixing, WordPress security, e-commerce WordPress, landing page development, hire freelance WordPress developer, hire WordPress developer, hire web developer
 page_name: services
+lang: en
+translation_key: wordpress-development
 permalink: /wordPress-development/
 ---
 

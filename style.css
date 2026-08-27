@@ -669,7 +669,7 @@ p {
     background: #000000;
     position: absolute;
     z-index: 3;
-    overflow-y: hidden;
+    overflow: visible;
 }
 .im_fixed {
     position: fixed;
@@ -3711,4 +3711,42 @@ ul.im_footer_contact li span{
 	h3 {
 		font-size: 22px; 
 	}
+}
+
+/* Footer menu: grid layout for long translations (HY, RU) */
+ul.im_footer_menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	float: none;
+}
+
+ul.im_footer_menu li,
+ul.im_footer_menu li:nth-child(odd) {
+	float: none;
+	width: auto;
+	list-style: none;
+}
+
+ul.im_footer_menu li a {
+	float: none;
+	line-height: 1.4;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+html[lang="hy"] ul.im_footer_menu,
+html[lang="ru"] ul.im_footer_menu {
+	grid-template-columns: 1fr;
+}
+
+html[lang="hy"] ul.im_footer_menu li:nth-child(even) a,
+html[lang="ru"] ul.im_footer_menu li:nth-child(even) a {
+	padding-left: 0;
+	border-left: none;
+}
+
+html[lang="hy"] ul.im_footer_menu li a,
+html[lang="ru"] ul.im_footer_menu li a {
+	padding-left: 0;
 }

@@ -3,6 +3,8 @@ layout: default
 title: Website Development
 custom_js: /assets/js/slider.js
 page_name: website-development
+lang: en
+translation_key: website-development
 description: I am a Full-Stack developer with over 9 years of experience, ready to develop your website and provide ongoing support. I can solve your website issues without excuses, even if they fall outside my main stack.
 permalink: /website-development/
 ---

@@ -1,0 +1,51 @@
+{%- assign target = include.lang -%}
+{%- assign key = page.translation_key -%}
+{%- assign lang_url = nil -%}
+
+{%- if key -%}
+  {%- for p in site.pages -%}
+    {%- assign p_lang = p.lang | default: "en" -%}
+    {%- if p.translation_key == key and p_lang == target -%}
+      {%- assign lang_url = p.url -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if lang_url == nil -%}
+    {%- for post in site.posts -%}
+      {%- assign p_lang = post.lang | default: "en" -%}
+      {%- if post.translation_key == key and p_lang == target -%}
+        {%- assign lang_url = post.url -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- if lang_url == nil and target == "ru" -%}
+    {%- for post in site.ru_posts -%}
+      {%- if post.translation_key == key -%}
+        {%- assign lang_url = post.url -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- if lang_url == nil and target == "hy" -%}
+    {%- for post in site.hy_posts -%}
+      {%- if post.translation_key == key -%}
+        {%- assign lang_url = post.url -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if lang_url == nil -%}
+  {%- if target == "en" -%}
+    {%- assign lang_url = "/" -%}
+  {%- elsif target == "ru" -%}
+    {%- assign lang_url = "/ru/" -%}
+  {%- elsif target == "hy" -%}
+    {%- assign lang_url = "/hy/" -%}
+  {%- endif -%}
+{%- endif -%}

@@ -10,12 +10,39 @@ paginate_path: "/blog/page/:num/"
 
 permalink: /blog/:title/
 
+languages:
+  - en
+  - ru
+  - hy
+default_lang: en
+
+collections:
+  ru_posts:
+    output: true
+    permalink: /ru/blog/:name/
+  hy_posts:
+    output: true
+    permalink: /hy/blog/:name/
+
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+      lang: en
+  - scope:
+      path: ""
+      type: ru_posts
+    values:
+      layout: post
+      lang: ru
+  - scope:
+      path: ""
+      type: hy_posts
+    values:
+      layout: post
+      lang: hy
 
 jekyll-archives:
   enabled:

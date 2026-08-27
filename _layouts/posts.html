@@ -10,12 +10,12 @@ layout: default
                     <div class="im_titlediv">
                         <span class="im-left-top-border"></span>
                         <span class="im-right-bottom-border"></span>
-                        <h2>Blog</h2>
+                        <h2>{% include i18n-string.html key="blog" %}</h2>
                     </div>
                     <ol class="breadcrumb">
-                        <li><a href="/">Home</a></li>                        
+                        <li><a href="{% include lang-prefix.html %}/">{% include i18n-string.html key="home" %}</a></li>                        
 						<li class="active">
-							<span>Blog</span>
+							<span>{% include i18n-string.html key="blog" %}</span>
 						</li>
                     </ol>
                 </div>
@@ -34,16 +34,7 @@ layout: default
             </div>
             <div class="col-lg-3">
                 <div class="categories">
-                    <ul>
-                        {% for category in site.categories %}
-                            <li>
-                            <a href="/category/{{ category[0] | slugify }}/">
-                                {{ category[0] }} ({{ category[1].size }})
-                            </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    
+                    {% include category-sidebar.html %}
                 </div>                
             </div>
         </div>

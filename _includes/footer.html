@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="im_footerdiv">
-					<h2>Social Links</h2>
+					<h2>{% include i18n-string.html key="social_links" %}</h2>
 					
 					<ul class="im_footer_sociallink">
 						<li><a href="https://x.com/aramayis_m" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -15,19 +15,19 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="im_footerdiv">
-					<h2>important link</h2>
+					<h2>{% include i18n-string.html key="important_links" %}</h2>
 					<ul class="im_footer_menu">
-						<li><a href="/services">My services</a></li>
-                    	<li><a href="/blog">Blog</a></li>
-                    	<li><a href="/contacts">Contacts</a></li>
-                    	<li><a href="/about">About me</a></li>
-                    	<li><a href="/privacy-policy">Privacy Policy</a></li>
+						<li><a href="{% include lang-prefix.html %}/services">{% include i18n-string.html key="nav_services" %}</a></li>
+                    	<li><a href="{% include lang-prefix.html %}/blog">{% include i18n-string.html key="nav_blog" %}</a></li>
+                    	<li><a href="{% include lang-prefix.html %}/contacts">{% include i18n-string.html key="nav_contacts" %}</a></li>
+                    	<li><a href="{% include lang-prefix.html %}/about">{% include i18n-string.html key="nav_about" %}</a></li>
+                    	<li><a href="{% include lang-prefix.html %}/privacy-policy">{% include i18n-string.html key="privacy_policy" %}</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="im_footerdiv">
-					<h2>Contacts</h2>
+					<h2>{% include i18n-string.html key="contacts" %}</h2>
 					<ul class="im_footer_contact">						
 						<li><span><i class="fa fa-envelope"></i></span> <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></li>
 					</ul>
@@ -43,7 +43,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<p>&copy; Copyrights 2026</p>
+				<p>&copy; {% include i18n-string.html key="copyright" %} 2026</p>
 			</div>
 		</div>
 	</div>

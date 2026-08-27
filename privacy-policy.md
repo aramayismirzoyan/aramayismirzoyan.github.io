@@ -2,6 +2,8 @@
 layout: default
 title: Privacy Policy
 page_name: privacy-policy
+lang: en
+translation_key: privacy-policy
 description: Privacy Policy for aramayismirzoyan.com
 permalink: /privacy-policy/
 ---

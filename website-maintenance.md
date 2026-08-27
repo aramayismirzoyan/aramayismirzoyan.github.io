@@ -2,6 +2,8 @@
 layout: default
 title: Website Maintenance Services — Code Support, Security & Long-Term Care
 page_name: services
+lang: en
+translation_key: website-maintenance
 description: "Professional website maintenance services including codebase support, security updates, integration and unit testing, clean architecture, and long-term project stability. I ensure your web application remains scalable, secure, and easy to maintain. Contact: aramayismirzoyan@yahoo.com"
 og_description: Keep your website stable and secure with professional maintenance services. Code support, testing, security updates, and clean architecture for long-term success.
 keywords: website maintenance, website support, code maintenance, web application maintenance, Laravel maintenance, WordPress maintenance, website security, unit testing, integration testing, clean code, software maintenance services, long-term support

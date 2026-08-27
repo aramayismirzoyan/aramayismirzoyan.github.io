@@ -1,0 +1,24 @@
+{%- include assign-lang-posts.html -%}
+{%- capture lang_prefix -%}{%- include lang-prefix.html -%}{%- endcapture -%}
+{%- assign categories_list = "frontend|website|MVP" | split: "|" -%}
+<ul>
+  {%- for cat in categories_list -%}
+    {%- assign count = 0 -%}
+    {%- for post in lang_posts -%}
+      {%- assign cat_lower = cat | downcase -%}
+      {%- for post_cat in post.categories -%}
+        {%- assign post_cat_lower = post_cat | downcase -%}
+        {%- if post_cat_lower == cat_lower -%}
+          {%- assign count = count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- if count > 0 -%}
+      <li>
+        <a href="{{ lang_prefix }}/category/{{ cat | downcase }}/">
+          {{ cat }} ({{ count }})
+        </a>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
