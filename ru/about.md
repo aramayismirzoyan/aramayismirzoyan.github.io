@@ -26,7 +26,7 @@ permalink: /ru/about/
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="im_about_data">
-							<h3>Арамайис Мирзоян</h3>
+							<h3>Арамаис Мирзоян</h3>
 							<p>Здравствуйте, я Full-Stack веб-разработчик с более чем 9-летним опытом. Помогаю стартапам и малому/среднему бизнесу решать технические задачи. Могу решить проблемы вашего сайта даже если они выходят за рамки моего основного стека.
 
 Я работаю в основном с PHP, JavaScript, Laravel, React, Vue.js, WordPress, HTML, CSS и jQuery. Открыт к новым технологиям и языкам программирования, если ваш проект в этом нуждается. Уделяю внимание качеству кода.</p>
@@ -106,7 +106,6 @@ permalink: /ru/about/
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 im_bottompadder30">
                 <div class="im_product_div">
                     <div class="im_product_img">
@@ -126,7 +125,6 @@ permalink: /ru/about/
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 im_bottompadder30">
                 <div class="im_product_div">
                     <div class="im_product_img">
