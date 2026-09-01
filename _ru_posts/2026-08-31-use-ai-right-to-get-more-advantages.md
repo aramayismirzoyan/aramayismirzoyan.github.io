@@ -11,6 +11,7 @@ blog_description: "Роль ИИ — помогать нам выполнять 
 page_name: blog
 lang: ru
 translation_key: use-ai-right-to-get-more-advantages
+permalink: /ru/blog/use-ai-right-to-get-more-advantages/
 categories: [website]
 ---
 

@@ -8,6 +8,7 @@ blog_description: "В настоящее время вы можете увиде
 page_name: blog
 lang: ru
 translation_key: custom-wordpress-template-html-speed-website
+permalink: /ru/blog/custom-wordpress-template-html-speed-website/
 categories: [website]
 ---
 
