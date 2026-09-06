@@ -1,6 +1,7 @@
 title: Aramayis Mirzoyan
 description: Full-Stack Developer
 url: "https://aramayismirzoyan.com"
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -13,6 +14,7 @@ permalink: /blog/:title/
 languages:
   - en
   - ru
+
 default_lang: en
 
 collections:
@@ -27,6 +29,7 @@ defaults:
     values:
       layout: post
       lang: en
+
   - scope:
       path: ""
       type: ru_posts

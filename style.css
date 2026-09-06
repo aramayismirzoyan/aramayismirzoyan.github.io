@@ -3506,6 +3506,17 @@ ul.im_footer_contact li span{
 	margin-top: 50px;
 }
 
+.blog-list-article__time {
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.blog-single-article__time {
+	display: inline-block;
+	margin-top: 10px;
+	color: #ffffff;
+}
+
 /*.blog-article__categories {*/
 /*	margin-top: 18px;*/
 /*}*/

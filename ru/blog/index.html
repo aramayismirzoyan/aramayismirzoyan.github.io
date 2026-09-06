@@ -8,13 +8,18 @@ permalink: /ru/blog/
 ---
 
 {% assign sorted_posts = site.ru_posts | sort: 'date' | reverse %}
+
 {% for post in sorted_posts %}
-  <article>
+  <article class="blog-list-article">
     <h2>
       <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </h2>
+
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="blog-list-article__time">
+      {{ post.date | date: "%d.%m.%Y" }}
+    </time>
 
     <p>{{ post.blog_description }}</p>
   </article>
