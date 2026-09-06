@@ -494,6 +494,87 @@
 
 {%- comment -%}
   ============================================================
+  WEBSITE DEVELOPMENT SERVICE
+  ============================================================
+
+  /website-development/
+  /ru/website-development/
+{%- endcomment -%}
+
+{%- elsif page.url == "/website-development/"
+      or page.url == "/ru/website-development/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+
+      "@id": "{{ site.url }}{{ page.url }}#service",
+
+      "name": {{ page.title
+        | default: "Website Development"
+        | jsonify }},
+
+      "url": "{{ site.url }}{{ page.url }}",
+
+      "description": {{ page.description
+        | default: page.excerpt
+        | strip_html
+        | strip_newlines
+        | jsonify }},
+
+      "serviceType": {% if current_lang == "ru" %}"Разработка сайтов"{% else %}"Website Development"{% endif %},
+
+      "provider": {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": "Aramayis Mirzoyan",
+        "url": "{{ site.url }}/",
+        "jobTitle": "Web Developer"
+      },
+
+      "areaServed": "Worldwide"
+    },
+    {
+      "@type": "WebPage",
+
+      "@id": "{{ site.url }}{{ page.url }}#webpage",
+
+      "url": "{{ site.url }}{{ page.url }}",
+
+      "name": {{ page.title
+        | default: "Website Development"
+        | jsonify }},
+
+      "description": {{ page.description
+        | default: page.excerpt
+        | strip_html
+        | strip_newlines
+        | jsonify }},
+
+      "inLanguage": "{{ schema_language }}",
+
+      "isPartOf": {
+        "@id": "{{ site.url }}/#website"
+      },
+
+      "about": {
+        "@id": "{{ site.url }}/#person"
+      },
+
+      "mainEntity": {
+        "@id": "{{ site.url }}{{ page.url }}#service"
+      }
+    }
+  ]
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
   OTHER PAGES
   ============================================================
 
