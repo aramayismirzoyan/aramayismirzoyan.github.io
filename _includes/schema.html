@@ -1,0 +1,576 @@
+{%- assign current_lang = page.lang | default: "en" -%}
+
+{%- comment -%}
+  ============================================================
+  LANGUAGE
+  ============================================================
+{%- endcomment -%}
+
+{%- assign schema_language = "en-US" -%}
+
+{%- if current_lang == "ru" -%}
+  {%- assign schema_language = "ru-RU" -%}
+{%- elsif current_lang == "hy" -%}
+  {%- assign schema_language = "hy-AM" -%}
+{%- elsif current_lang == "en" -%}
+  {%- assign schema_language = "en-US" -%}
+{%- endif -%}
+
+
+{%- comment -%}
+  ============================================================
+  BLOG ARTICLE
+  ============================================================
+
+  Examples:
+  /blog/my-article/
+  /ru/blog/my-article/
+{%- endcomment -%}
+
+{%- if page.url contains "/blog/"
+      and page.url != "/blog/"
+      and page.url != "/ru/blog/"
+      and page.url contains "/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+
+  "@id": "{{ site.url }}{{ page.url }}#article",
+
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+
+  "headline": {{ page.title | jsonify }},
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "url": "{{ site.url }}{{ page.url }}",
+
+  "inLanguage": "{{ schema_language }}",
+
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+
+  "dateModified": "{{ page.last_modified_at
+    | default: page.date
+    | date_to_xmlschema }}",
+
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  },
+
+  "publisher": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/"
+  }
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  BLOG LISTING
+  ============================================================
+
+  /blog/
+  /ru/blog/
+{%- endcomment -%}
+
+{%- elsif page.url == "/blog/"
+      or page.url == "/ru/blog/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+
+  "@id": "{{ site.url }}{{ page.url }}#webpage",
+
+  "url": "{{ site.url }}{{ page.url }}",
+
+  "name": {{ page.title
+    | default: "Blog"
+    | jsonify }},
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "inLanguage": "{{ schema_language }}",
+
+  "isPartOf": {
+    "@id": "{{ site.url }}/#website"
+  },
+
+  "about": {
+    "@id": "{{ site.url }}/#person"
+  }
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  SERVICES
+  ============================================================
+
+  /services/
+  /ru/services/
+{%- endcomment -%}
+
+{%- elsif page.url == "/services/"
+      or page.url == "/ru/services/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+
+  "@id": "{{ site.url }}{{ page.url }}#webpage",
+
+  "url": "{{ site.url }}{{ page.url }}",
+
+  "name": {{ page.title
+    | default: "Services"
+    | jsonify }},
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "inLanguage": "{{ schema_language }}",
+
+  "isPartOf": {
+    "@id": "{{ site.url }}/#website"
+  },
+
+  "about": {
+    "@id": "{{ site.url }}/#person"
+  },
+
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  }
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  LARAVEL DEVELOPMENT SERVICE
+  ============================================================
+
+  /laravel-development/
+{%- endcomment -%}
+
+{%- elsif page.url == "/laravel-development/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "@id": "{{ site.url }}/laravel-development/#service",
+
+  "name": "Laravel Development",
+
+  "url": "{{ site.url }}/laravel-development/",
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "serviceType": "Laravel Development",
+
+  "provider": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  },
+
+  "areaServed": "Worldwide"
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  WORDPRESS DEVELOPMENT SERVICE
+  ============================================================
+
+  /wordPress-development/
+{%- endcomment -%}
+
+{%- elsif page.url == "/wordPress-development/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "@id": "{{ site.url }}/wordPress-development/#service",
+
+  "name": "WordPress Development",
+
+  "url": "{{ site.url }}/wordPress-development/",
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "serviceType": "WordPress Development",
+
+  "provider": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  },
+
+  "areaServed": "Worldwide"
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  E-COMMERCE DEVELOPMENT SERVICE
+  ============================================================
+
+  /e-commerce-development/
+{%- endcomment -%}
+
+{%- elsif page.url == "/e-commerce-development/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "@id": "{{ site.url }}/e-commerce-development/#service",
+
+  "name": "E-commerce Development",
+
+  "url": "{{ site.url }}/e-commerce-development/",
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "serviceType": "E-commerce Development",
+
+  "provider": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  },
+
+  "areaServed": "Worldwide"
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  MVP DEVELOPMENT SERVICE
+  ============================================================
+
+  /mvp-development/
+{%- endcomment -%}
+
+{%- elsif page.url == "/mvp-development/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "@id": "{{ site.url }}/mvp-development/#service",
+
+  "name": "MVP Development",
+
+  "url": "{{ site.url }}/mvp-development/",
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "serviceType": "MVP Development",
+
+  "provider": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  },
+
+  "areaServed": "Worldwide"
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  WEBSITE MAINTENANCE SERVICE
+  ============================================================
+
+  /website-maintenance/
+{%- endcomment -%}
+
+{%- elsif page.url == "/website-maintenance/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "@id": "{{ site.url }}/website-maintenance/#service",
+
+  "name": "Website Maintenance",
+
+  "url": "{{ site.url }}/website-maintenance/",
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "serviceType": "Website Maintenance",
+
+  "provider": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Aramayis Mirzoyan",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Web Developer"
+  },
+
+  "areaServed": "Worldwide"
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  CONTACTS
+  ============================================================
+
+  /contacts/
+  /ru/contacts/
+{%- endcomment -%}
+
+{%- elsif page.url == "/contacts/"
+      or page.url == "/ru/contacts/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+
+  "@id": "{{ site.url }}{{ page.url }}#contactpage",
+
+  "url": "{{ site.url }}{{ page.url }}",
+
+  "name": {{ page.title
+    | default: "Contacts"
+    | jsonify }},
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "inLanguage": "{{ schema_language }}",
+
+  "isPartOf": {
+    "@id": "{{ site.url }}/#website"
+  },
+
+  "about": {
+    "@id": "{{ site.url }}/#person"
+  },
+
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+
+    "name": "Aramayis Mirzoyan",
+
+    "url": "{{ site.url }}/",
+
+    "jobTitle": "Web Developer"
+  }
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  ABOUT
+  ============================================================
+
+  /about/
+  /ru/about/
+{%- endcomment -%}
+
+{%- elsif page.url contains "/about" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+
+  "@id": "{{ site.url }}{{ page.url }}#profile",
+
+  "url": "{{ site.url }}{{ page.url }}",
+
+  "name": {{ page.title
+    | default: "About Aramayis Mirzoyan"
+    | jsonify }},
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "inLanguage": "{{ schema_language }}",
+
+  "isPartOf": {
+    "@id": "{{ site.url }}/#website"
+  },
+
+  "mainEntity": {
+    "@type": "Person",
+
+    "@id": "{{ site.url }}/#person",
+
+    "name": "Aramayis Mirzoyan",
+
+    "url": "{{ site.url }}/",
+
+    "jobTitle": "Web Developer"
+  }
+}
+</script>
+
+
+{%- comment -%}
+  ============================================================
+  OTHER PAGES
+  ============================================================
+
+  All other pages except homepage.
+{%- endcomment -%}
+
+{%- else -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+
+  "@id": "{{ site.url }}{{ page.url }}#webpage",
+
+  "url": "{{ site.url }}{{ page.url }}",
+
+  "name": {{ page.title
+    | default: site.title
+    | jsonify }},
+
+  "description": {{ page.description
+    | default: page.excerpt
+    | strip_html
+    | strip_newlines
+    | jsonify }},
+
+  "inLanguage": "{{ schema_language }}",
+
+  "isPartOf": {
+    "@id": "{{ site.url }}/#website"
+  },
+
+  "about": {
+    "@id": "{{ site.url }}/#person"
+  }
+}
+</script>
+
+{%- endif -%}
+
+
+{%- comment -%}
+  ============================================================
+  BREADCRUMBS
+  ============================================================
+
+  BreadcrumbList for all non-homepage pages.
+{%- endcomment -%}
+
+{%- unless page.url == "/"
+      or page.url == "/ru/" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+
+  "@id": "{{ site.url }}{{ page.url }}#breadcrumb",
+
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title
+        | default: site.title
+        | jsonify }},
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+
+{%- endunless -%}
