@@ -157,6 +157,10 @@ body{
     padding-top: 10px!important;
     padding-bottom: 10px!important;
   }
+
+  .hompage-content__menu-items {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 409px) {
