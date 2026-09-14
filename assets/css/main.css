@@ -138,6 +138,11 @@ body{
   .hompage-content__block {
     width: 90%;
   }
+
+  .home-lang-switcher {
+    top: auto;
+    bottom: 20px;
+  }
 }
 
 @media (max-width: 409px) {
