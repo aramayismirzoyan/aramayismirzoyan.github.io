@@ -134,6 +134,10 @@ body{
   .hompage-content__description {
     margin-bottom: 5px;
   }
+
+  .hompage-content__block {
+    width: 90%;
+  }
 }
 
 @media (max-width: 409px) {
