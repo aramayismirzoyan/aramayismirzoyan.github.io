@@ -140,8 +140,8 @@ body{
   }
 
   .home-lang-switcher {
-    top: auto;
-    bottom: 20px;
+    top: auto!important;
+    bottom: 20px!important;
   }
 }
 
