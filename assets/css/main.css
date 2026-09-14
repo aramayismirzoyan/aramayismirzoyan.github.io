@@ -123,12 +123,16 @@ body{
 
 @media (max-width: 585px) {
   .hompage-content__title {
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: 0px;
   }
 
   .hompage-content__info {
     font-size: 17px;
+  }
+
+  .hompage-content__description {
+    margin-bottom: 5px;
   }
 }
 
