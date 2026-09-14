@@ -143,6 +143,20 @@ body{
     top: auto!important;
     bottom: 20px!important;
   }
+
+  .home-lang-switcher .lang-dropdown__menu {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: calc(100% + 3px);
+    min-width: 109px;
+    height: 35px;
+  }
+
+  .home-lang-switcher .lang-dropdown__item {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+  }
 }
 
 @media (max-width: 409px) {
