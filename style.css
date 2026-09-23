@@ -2385,8 +2385,8 @@ ul.im_footer_contact li:hover span i {
 .im_contact-form .im_form .form-group .form-control {
     height: 50px;
     border-radius: 0;
-    box-shadow: none;
-    border: none;
+    /*box-shadow: none;*/
+    /*border: none;*/
     color: #666666;
 }
 .im_contact-form .im_form .form-group .form-control.im_custom_select {
@@ -2407,6 +2407,7 @@ ul.im_footer_contact li:hover span i {
 	resize: none;
 }
 .im_contact-form .im_form .im_btndiv .im_btn {
+	margin-top: 20px;
     border: 1px solid #fff;
     text-transform: uppercase;
 }
@@ -3352,6 +3353,15 @@ ul.im_footer_contact li span{
 	}
 }
 
+@media (max-width: 1200px) {
+  .im_contact-form {
+    margin-top: 30px;
+  }
+  .contact-another-links ul {
+  	margin-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
 	.im_logo {
 		position: relative;
@@ -3658,11 +3668,23 @@ ul.im_footer_contact li span{
 .services-block_landing ul li a {
 	font-size: 25px;
 }
-
+.contact-another-links h2 {
+	margin-bottom: 20px;
+}
 .email-suggestion {
-	margin-top: 40px;
 	margin-bottom: 0;
     font-size: 20px;
+}
+.email-suggestion h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.email-suggestion ul {
+	list-style: none;
+	padding-left: 0;
+}
+.email-suggestion ul li {
+	margin-bottom: 8px;
 }
 .about-email-suggestion {
 	/*margin-top: 60px;*/
@@ -3744,6 +3766,11 @@ ul.im_footer_menu li a {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	hyphens: auto;
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
 }
 
 html[lang="hy"] ul.im_footer_menu,

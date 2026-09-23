@@ -46,6 +46,13 @@
 		<link rel="stylesheet" href="/assets/js/plugins/slick/slick.css">
 		<link rel="stylesheet" href="/style.css">
 		<link rel="stylesheet" href="/assets/css/lang-switcher.css">
+		{% if page.turnstile %}
+		<script
+		    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+		    async
+		    defer>
+		</script>
+		{% endif %}
 		{% include schema.html %}
 </head>
 <body>
@@ -72,6 +79,9 @@
 <script src="/assets/js/lang-switcher.js"></script>
 {% if page.custom_js %}
   <script src="{{ page.custom_js }}"></script>
+{% endif %}
+{% if page.turnstile %}
+<script src="{{ '/assets/js/contact-form.js' | relative_url }}"></script>
 {% endif %}
 </body>
 </html>
