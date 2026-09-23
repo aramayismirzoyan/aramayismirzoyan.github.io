@@ -98,49 +98,6 @@ Copyright (c) 2017
 				}
 			});
 		},
-		
-		
-		//contact form submition
-		ContactFormSubmit: function(){
-			if($('#send_btn').length > 0){	
-				$("#send_btn").on("click", function() {
-				var e = $("#ur_name").val();
-				var t = $("#ur_mail").val();
-				var ph = $("#ur_phone").val();
-				var s = $("#sub").val();
-				var r = $("#msg").val();
-				$.ajax({
-					type: "POST",
-					url: "ajaxmail.php",
-					data: {
-						username: e,
-						useremail: t,
-						userphone: ph,
-						//usersub: s,
-						mesg: r
-					},
-					success: function(n) {
-						var i = n.split("#");
-						if (i[0] == "1") {
-							$("#ur_name").val("");
-							$("#ur_mail").val("");
-							$("#ur_phone").val("");
-							// $("#sub").val("");
-							$("#msg").val("");
-							$("#err").html(i[1]);
-						} else {
-							$("#ur_name").val(e);
-							$("#ur_mail").val(t);
-							$("#ur_phone").val(ph);
-							// $("#sub").val(s);
-							$("#msg").val(r);
-							$("#err").html(i[1]);
-						}
-					}
-				});
-			});
-		}
-		},
 		//Search Box on header
 		SearchBox: function(){
 		if($('#top-search > a > i').length > 0){		
