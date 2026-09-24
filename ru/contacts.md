@@ -7,6 +7,7 @@ translation_key: contacts
 description: Вы можете связаться со мной по электронной почте, чтобы обсудить ваш проект
 permalink: /ru/contacts/
 turnstile: true
+notification_modal: true
 ---
 
 <div class="im_breadcrums_div">
