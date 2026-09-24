@@ -128,7 +128,11 @@ notification_modal: true
 						        data-sitekey="0x4AAAAAAE_WXRymJslkGbZJ">
 						    </div>
 							<div class="im_btndiv">
-								<button class="im_btn" type="submit" id="send_btn">contact me</button>
+								<button 
+									class="im_btn" 
+									type="submit" 
+									id="send_btn"
+									data-default-text="contact me">contact me</button>
 								<p id="err"></p>
 							</div>
 						</div>

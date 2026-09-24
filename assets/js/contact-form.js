@@ -114,6 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         sendButton.disabled = false;
-        sendButton.textContent = 'contact me';
+        sendButton.textContent = sendButton.dataset.defaultText;
     });
 });
