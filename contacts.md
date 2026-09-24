@@ -102,6 +102,7 @@ notification_modal: true
 			                        placeholder="WhatsApp(optional)"
 			                        id="ur_phone"
 			                        name="whatsapp"
+			                        pattern="^\+?[0-9\s\-()]{7,20}$"
 			                    >
 							</div>
 							<div class="form-group">
