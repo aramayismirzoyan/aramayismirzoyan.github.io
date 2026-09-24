@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const name = document.getElementById('ur_name').value.trim();
         const email = document.getElementById('ur_mail').value.trim();
-        const whatsapp = document.getElementById('ur_phone').value.trim();
+        const whatsapp = document.getElementById('ur_phone')?.value.trim() || '';
         const message = document.getElementById('msg').value.trim();
 
         // Client-side validation
