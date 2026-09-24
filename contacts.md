@@ -7,6 +7,7 @@ translation_key: contacts
 description: You can contact me by email to discuss your project
 permalink: /contacts/
 turnstile: true
+notification_modal: true
 ---
 
 <div class="im_breadcrums_div">
@@ -136,3 +137,4 @@ turnstile: true
         </div>
     </div>
 </div>
+{% include notification-modal.html message="Your request has been sent successfully. I will review your message and get back to you shortly." %}

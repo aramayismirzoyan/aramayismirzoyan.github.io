@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     window.turnstile.reset();
                 }
 
-                errorElement.textContent =
-                    'Your message has been sent successfully.';
+                const notificationModal = document.getElementById('notification-modal');
+                notificationModal.style.display = 'block';
 
             } else {
                 errorElement.textContent =

@@ -53,6 +53,9 @@
 		    defer>
 		</script>
 		{% endif %}
+		{% if page.notification_modal %}
+		    <link rel="stylesheet" href="{{ '/assets/css/notification-modal.css' | relative_url }}">
+		{% endif %}
 		{% include schema.html %}
 </head>
 <body>
@@ -77,6 +80,9 @@
 <script src="/assets/js/custom.js"></script>
 <script src="/assets/js/preferred-lang.js"></script>
 <script src="/assets/js/lang-switcher.js"></script>
+{% if page.notification_modal %}
+    <script src="{{ '/assets/js/notification-modal.js' | relative_url }}"></script>
+{% endif %}
 {% if page.custom_js %}
   <script src="{{ page.custom_js }}"></script>
 {% endif %}

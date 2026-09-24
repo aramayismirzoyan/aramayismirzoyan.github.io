@@ -118,3 +118,4 @@ turnstile: true
         </div>
     </div>
 </div>
+{% include notification-modal.html message="Ваш запрос успешно отправлен. Я рассмотрю ваше сообщение и свяжусь с вами в ближайшее время." %}
