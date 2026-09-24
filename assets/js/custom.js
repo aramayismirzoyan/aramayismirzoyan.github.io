@@ -26,7 +26,6 @@ Copyright (c) 2017
 			this.ClientSlider();
 			this.Chart();
 			this.SearchBox();
-			this.ContactFormSubmit();
 			this.ImgZoom();
 			
 		},
