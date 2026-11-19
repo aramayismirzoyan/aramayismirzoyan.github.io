@@ -1,0 +1,23 @@
+---
+layout: category
+title: AI
+description: Articles about Artificial Intelligence (AI), AI tools, automation, and their practical applications in web development, business, and digital products.
+og_description: Explore AI tools, artificial intelligence, automation, and practical ways to use AI in web development, business, and MVP creation.
+page_name: blog
+lang: en
+translation_key: category-ai
+---
+
+<h1>Category: AI</h1>
+
+{% assign posts = site.categories['ai'] %}
+
+{% for post in site.categories.ai %}
+  <article>
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  </article>
+{% endfor %}

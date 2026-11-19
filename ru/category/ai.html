@@ -1,0 +1,31 @@
+---
+layout: category
+title: AI
+description: Статьи об искусственном интеллекте, инструментах ИИ, автоматизации и их практическом применении в веб-разработке, бизнесе и цифровых продуктах.
+og_description: Изучайте инструменты искусственного интеллекта, автоматизацию и практические способы применения ИИ в веб-разработке, бизнесе и создании MVP.
+page_name: blog
+lang: ru
+translation_key: category-ai
+permalink: /ru/category/ai/
+---
+
+<h1>{% include i18n-string.html key="category" %}: ИИ</h1>
+
+{% for post in site.ru_posts %}
+  {% assign show = false %}
+  {% for cat in post.categories %}
+    {% assign cat_lower = cat | downcase %}
+    {% if cat_lower == "ai" %}
+      {% assign show = true %}
+    {% endif %}
+  {% endfor %}
+  {% if show %}
+  <article>
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  </article>
+  {% endif %}
+{% endfor %}

@@ -8,7 +8,7 @@ blog_description: "The role of AI is helping us to do our work faster. Sometimes
 page_name: blog
 lang: en
 translation_key: use-ai-right-to-get-more-advantages
-categories: [website]
+categories: [ai]
 ---
 
 The role of AI is helping us to do our work faster.
