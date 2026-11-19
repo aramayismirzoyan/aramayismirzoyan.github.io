@@ -42,6 +42,7 @@ notification_modal: true
                 	<ul>
                 		<li>Почта: <a href="mailto:aramayismirzoyan@yahoo.com">aramayismirzoyan@yahoo.com</a></li>
                 		<li>WhatsApp: <a href="https://wa.me/37495191644" target="_blank">+37495191644</a></li>
+                		<li>Telegram: <a href="https://t.me/Devx71" target="_blank">@Devx71</a></li>
                 	</ul>
                 </div>
                 <div>
